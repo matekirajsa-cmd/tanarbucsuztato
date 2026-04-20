@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Tanárbúcsúztató Meghívó</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 350px;
+        }
+        h1 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Kossuth Lajos Gimnázium 12.B tanárbúcsúztató meghívó</h1>
+
+    <form action="https://formspree.io/f/xnjlzkrv" method="POST">
+        <label for="name">Név:</label>
+        <input type="text" id="name" name="Név" required>
+
+        <label for="attendance">El tud jönni a tanárbúcsúztatóra?</label>
+        <select id="attendance" name="Részvétel" required>
+            <option value="Igen">Igen</option>
+            <option value="Nem">Nem</option>
+        </select>
+
+        <button type="submit">Küldés</button>
+    </form>
+</div>
+
+</body>
+</html>
